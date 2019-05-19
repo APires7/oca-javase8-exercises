@@ -20,16 +20,16 @@ import java.util.logging.SimpleFormatter;
 public class TestClass {
 
 	public static void main(String[] args) throws IOException {
-		// Assegura que o diretÛrio ser· criado
+		// Assegura que o diret√≥rio ser√° criado
 		Files.createDirectories(Paths.get("logs"));
 
-		// ObtÈm a data a ser usada no nome do arquivo
+		// Obt√©m a data a ser usada no nome do arquivo
 		DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyyMMdd_hhmm");
 
 		LocalDateTime now = LocalDateTime.now();
 		String date = now.format(df);
 
-		// Define o nome do arquivo no diretÛrio logs
+		// Define o nome do arquivo no diret√≥rio logs
 		String logFileName = "logs\\testlog-" + date + ".txt";
 
 		// Define Logger
