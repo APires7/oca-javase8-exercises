@@ -1,7 +1,7 @@
 /**
  * 
  */
-package capitulo1;
+package com;
 
 import java.util.Properties;
 

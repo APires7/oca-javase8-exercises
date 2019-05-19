@@ -1,11 +1,11 @@
 /**
  * 
  */
-package capitulo1.com.ocajexam.tutorial;
+package com.ocajexam.tutorial;
 
-import capitulo1.com.ocajexam.tutorial.planets.Earth;
-import capitulo1.com.ocajexam.tutorial.planets.Mars;
-import capitulo1.com.ocajexam.tutorial.planets.Venus;
+import com.ocajexam.tutorial.planets.Earth;
+import com.ocajexam.tutorial.planets.Mars;
+import com.ocajexam.tutorial.planets.Venus;
 
 /**
  * @author allan

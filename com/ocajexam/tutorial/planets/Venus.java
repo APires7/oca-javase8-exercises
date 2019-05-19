@@ -1,7 +1,7 @@
 /**
  * 
  */
-package capitulo1.com.ocajexam.tutorial.planets;
+package com.ocajexam.tutorial.planets;
 
 /**
  * @author allan
