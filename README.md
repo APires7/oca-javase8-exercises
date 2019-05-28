@@ -30,3 +30,18 @@ Repositório para códigos feitos durante estudo para certificação Oracle OCA 
 			System.out.println(Integer.MAX_VALUE);
 			The other way is with math. An int is 32 bits. 232 is 4,294,967,296. Divide that by 2 and you get 2,147,483,648.
 			Then subtract 1 as we did with bytes and you get 2,147,483,647. It’s	easier to just ask Java to print the value, isn’t it?
+	* Numeric Literals
+		Java allows you to specify digits in several other formats:
+			* octal (digits 0-7), which uses the number 0 as a prefix - for example, 017.
+			* hexadecimal (digits 0-9 and letters A-F), which uses the number 0 followed by x or X as a prefix - for example, 0xFF.
+			* binary (digits 0-1), which uses the number 0 followed by b or B as a prefix - for example, 0b10.
+		The last thing you need to know about numeric literals is a feature added in Java 7. You can have underscores in numbers to make them easier to read:
+			* int million1 = 1000000;
+			* int million2 = 1_000_000;
+		We'd rather be reading the latter one because the zeros don't run together. You can add underscores anywhere except at the beginning of a literal, the end of a literal, right before a decimal point, or right after a decimal point.
+			* double notAtStart = _1000.00; // Doesn't compile
+			* double notAtEnd = 1000.00_; // Doesn't compile
+			* double notByDecimal = 1000_.00; // Doesn't compile
+			* double annoyingButLegal = 1_00_0.0_0; // this one compiles	
+			
+* Reference Types
