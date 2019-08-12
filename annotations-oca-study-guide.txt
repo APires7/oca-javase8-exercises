@@ -1,0 +1,3 @@
+* When you see a nonstandard identifier, be sure to check if it's legal. 
+If not, you get to mark the answer "doesn't compile" and skip analyzing everything else in the question.
+
