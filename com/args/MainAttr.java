@@ -12,9 +12,11 @@ public class MainAttr {
         for (char c = 'a'; c <= 'z'; c++) {
             System.out.println(c);
         }
-        
-       boolean BOOLEAN = false;
-       
+
+        boolean BOOLEAN = false;
+        if (BOOLEAN) {
+            System.out.println("TRUE");
+        }
 
     }
 
