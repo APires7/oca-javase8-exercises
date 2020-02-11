@@ -47,6 +47,17 @@ public class MainOp {
         System.out.println(34 ^ 46); // 12
         System.out.println(436 | 547); // 951
 
+        int y;
+        for (int j = 0; j < 10; ++j) {
+            y = j % 5 + 2;
+        }
+        // System.out.println(y); // Erro de compilação, var não inicializada
+
+        byte b = 1;
+        int ii = 1;
+        long l = 1;
+        // float f = 1.0; Não compila (double não pode ser colocado em um float)
+
     }
 
 }
