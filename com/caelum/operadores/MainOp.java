@@ -32,6 +32,21 @@ public class MainOp {
         System.out.println(3.0 / 0); // Infinity
         System.out.println(-3.0 / 0); // -Infinity
 
+        System.out.println("Operadores bit a bit");
+        // Converte os números em binário e realiza a operação via tabela da verdade e depois converte para decimal
+        // int a = 34 - Inteiro tem 16 bits = 0000000000100010
+        // int b = 43 - Inteiro tem 16 bits = 0000000000101011
+        // int c = a & b = 0000000000100010 = 34
+        // int d = a ^ b = 0000000000001001 = 9
+        // int e = a | b = 0000000000101011 = 43
+
+        // & - 1 e 1 = 1
+        // | - sempre que aparece 1 é 1
+        // ^ - valores iguais são 0
+        System.out.println(34 & 43); // 34
+        System.out.println(34 ^ 46); // 12
+        System.out.println(436 | 547); // 951
+
     }
 
 }
