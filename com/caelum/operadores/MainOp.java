@@ -47,6 +47,7 @@ public class MainOp {
         System.out.println(34 ^ 46); // 12
         System.out.println(436 | 547); // 951
 
+        /* */
         int y;
         for (int j = 0; j < 10; ++j) {
             y = j % 5 + 2;
@@ -57,6 +58,31 @@ public class MainOp {
         int ii = 1;
         long l = 1;
         // float f = 1.0; Não compila (double não pode ser colocado em um float)
+
+        /* */
+        byte b1 = 127;
+        byte b2 = -128;
+        // byte b3 = b1 + b2; Somando dois bytes que dão um inteiro, sem cast não funciona
+
+        /* */
+        int k;
+        for (k = 0; k < 5; k++) {
+            if (++k % 3 == 0) {
+                break;
+            }
+        }
+        // ++k = 3 // k++ = 1
+        System.out.println(k);
+
+        /* */
+        char c1 = 65;
+        // char c2 = -3; Não compila
+        char c2 = 68 - 65;
+        System.out.println(c1 + c2);
+
+        /* */
+        double result = 15 / 0;
+        System.out.println(result); // Dá exception (division by zero)
 
     }
 
