@@ -8,6 +8,9 @@ public class JavaSETest {
 	public static void main(String[] args) {
 		exercise1();
 		exercise2();
+		exercise3();
+		exercise4();
+		exercise5();
 
 	}
 
@@ -53,6 +56,56 @@ public class JavaSETest {
 			System.out.println("Stand");
 
 		}
+	}
+
+	/**
+	 * What is the result? Box
+	 */
+	private static void exercise3() {
+		List<String> items = new ArrayList<>();
+		items.add("Pen");
+		items.add("Pencil");
+		items.add("Box");
+		for (String i : items) {
+			// Returns the index within this string of the first occurrence of the specified
+			// character, starting the search at the specified index
+			if (i.indexOf("P") == 0) {
+				continue;
+			} else {
+				System.out.print(i + " ");
+			}
+		}
+	}
+
+	/**
+	 * What is the result? Compilation fails, because catch of ArithmeticException
+	 * should be first than Exception
+	 */
+	private static void exercise4() {
+		int x = 10;
+		int y = 2;
+		try {
+			for (int z = 2; z >= 0; z--) {
+				int ans = x / z;
+				System.out.print(ans + " ");
+			}
+		} catch (Exception e1) {
+			System.out.println("E1");
+//		} catch (ArithmeticException e1) {
+//			System.out.println("E2");
+		}
+	}
+
+	/**
+	 * What is the result? 4
+	 */
+	private static void exercise5() {
+		StringBuilder s1 = new StringBuilder("Java");
+		String s2 = "Love";
+		s1.append(s2);
+		s1.substring(4);
+		int foundAt = s1.indexOf(s2);
+		System.out.println(foundAt);
 	}
 
 }
