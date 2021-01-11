@@ -11,7 +11,7 @@ public class ArraysBasico {
 		double pesos[];
 
 		// Declaração de um array para guardar variáveis do tipo long.
-		long []pesos2;
+		long[] pesos2;
 
 		// Declaração de um array para guardar variáveis do tipo long.
 		long[] tamanhos;
@@ -25,6 +25,18 @@ public class ArraysBasico {
 		int[] inteiros2;
 		inteiros2={1,2,5,7,5}; // Não compila
 
+		// O programa inicializa i para o tamanho do array, acessando uma posição inexistente. Portanto dá erro em execução (exception).
+		int x[] = new int[3];
+		for (int i = x.length; i >= 0; i--)
+			x[i] = i * 2;
+		System.out.println("Fim!");
+		
+		
+		int y[] = new int[3];
+        for(y[1]=y.length-1;y[0]==0;y[1]--) {
+            y[y[1]]=-5;
+            System.out.println(y[1]);
+        }
 	}
 
 }
