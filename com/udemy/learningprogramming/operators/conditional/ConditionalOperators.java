@@ -33,6 +33,8 @@ public class ConditionalOperators {
 		int y = 20;
 		x = (y != 10) ^ (z = false); // z= false sets z to false
 		// true ^ false -> true
+		// ^ = different = true
+		// ^ = equal = false
 
 		// x = true, y = 20, z = false
 		System.out.println(x + ", " + y + ", " + z);
